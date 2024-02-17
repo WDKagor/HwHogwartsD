@@ -15,8 +15,5 @@ public class Main {
         new Slytherin("Draco Malfoy", 100, 98, 92, 100, 85, 100, 100);
         new Slytherin("Graham Montague", 95, 88, 98, 90, 94, 96, 100);
         new Slytherin("Gregory Goyle", 89, 84, 92, 95, 94, 99, 100);
-
-
-
     }
 }
