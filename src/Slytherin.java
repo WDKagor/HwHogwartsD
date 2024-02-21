@@ -64,4 +64,16 @@ public class Slytherin extends Hogwarts {
                 ", savvy=" + savvy +
                 ", thirstForPower=" + thirstForPower;
     }
+
+    public void compareStudentsRin (Slytherin first, Slytherin second) {
+        int sumOfPropertiesFirst = first.thirstForPower + first.determination + first.savvy + first.cunning + first.ambition;
+        int sumOfPropertiesSecond = second.thirstForPower + second.determination + second.savvy + second.cunning + second.ambition;
+        if (sumOfPropertiesFirst > sumOfPropertiesSecond) {
+            System.out.println(first.getName() + " лучший Слизерианец, чем " + second.getName());
+        } else if (sumOfPropertiesFirst == sumOfPropertiesSecond) {
+            System.out.println(first.getName() + " и " + second.getName() + " одинаково хороши на своем факультете");
+        } else {
+            System.out.println(second.getName() + " лучший Слизерианец, чем " + first.getName());
+        }
+    }
 }

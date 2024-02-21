@@ -40,5 +40,18 @@ public class Gryffindor extends Hogwarts {
         return faculty + ": " + super.toString() + " " + ", nobility = " + nobility +
                 ", honor = " + honor +
                 ", bravery = " + bravery;
+        // Во всех классах-факультетах вот так переопределен toString
+    }
+
+    public void compareStudentsDor (Gryffindor first, Gryffindor second) {
+        int sumOfPropertiesFirst = first.getBravery() + first.getHonor() + first.getNobility();
+        int sumOfPropertiesSecond = second.getBravery() + second.getHonor() + second.getNobility();
+        if (sumOfPropertiesFirst > sumOfPropertiesSecond) {
+            System.out.println(first.getName() + " лучший Гриффендорец, чем " + second.getName());
+        } else if (sumOfPropertiesFirst == sumOfPropertiesSecond) {
+            System.out.println(first.getName() + " и " + second.getName() + " одинаково хороши на своем факультете");
+        } else {
+            System.out.println(second.getName() + " лучший Гриффендорец, чем " + first.getName());
+        }
     }
 }
