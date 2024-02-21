@@ -1,4 +1,5 @@
 public class Slytherin extends Hogwarts {
+    private String faculty = "Slytherin";
     private int cunning;
     private int determination;
     private int ambition;
@@ -52,5 +53,15 @@ public class Slytherin extends Hogwarts {
 
     public void setThirstForPower(int thirstForPower) {
         this.thirstForPower = thirstForPower;
+    }
+
+    @Override
+    public String toString() {
+        return faculty + ": " + super.toString() + " " +
+                ", cunning=" + cunning +
+                ", determination=" + determination +
+                ", ambition=" + ambition +
+                ", savvy=" + savvy +
+                ", thirstForPower=" + thirstForPower;
     }
 }

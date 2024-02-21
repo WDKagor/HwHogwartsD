@@ -41,7 +41,7 @@ public class Hufflepuff extends Hogwarts {
 
     @Override
     public String toString() {
-        return ", industriousness = " + industriousness + ", loyalty = " + loyalty + ", honesty = " + honesty;
+        return faculty + ": " + super.toString() + " " + ", industriousness = " + industriousness + ", loyalty = " + loyalty + ", honesty = " + honesty;
     }
 }
 
